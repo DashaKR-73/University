@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DB editor</title>
+    <!-- Підключення бібліотек vue →-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <style>
+        body {
+            background-color: rgb(164, 66, 220);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center; /* Center the child div horizontally */
+            height: 100vh; /* Full viewport height */
+        }
+
+        div.text {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="text"><!-- Створення екземпляру додатку vue -->
+        <div id="app"></div>
+        <!-- Підключення файлу js з vue скриптами -->
+        <script src="js/main.js"></script>
+    </div>
+</div>
+</body>
+
+</html>

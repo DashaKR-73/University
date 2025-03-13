@@ -1,0 +1,23 @@
+server:
+  port: 8004
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auth?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
+          dialect.storage_engine: innodb
+    generate-ddl: true
+    show-sql: false
+
+jwt:
+  secret: secret_token
+  expired: 310000
